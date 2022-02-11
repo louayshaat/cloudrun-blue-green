@@ -1,0 +1,22 @@
+{
+  "name": "cats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guttapudi/node-cats.git"
+  },
+  "author": "Karthik Guttapudi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guttapudi/node-cats/issues"
+  },
+  "homepage": "https://github.com/guttapudi/node-cats#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
