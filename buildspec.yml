@@ -7,6 +7,9 @@ phases:
       - REPOSITORY_URI=$IMAGE_URI
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
+      - echo $REPOSITORY_URI
+      - echo $COMMIT_HASH
+      - echo $IMAGE_TAG
   build:
     commands:
       - echo Build started on `date`
