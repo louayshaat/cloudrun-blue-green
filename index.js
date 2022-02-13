@@ -8,7 +8,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/cat', (req,res) => {
-	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)]});
+	res.send({ 'name': catNames[Math.floor(Math.random() * catNames.length)]});
 });
 
 const appPort = process.env.PORT || 5050;
