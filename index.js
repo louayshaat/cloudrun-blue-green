@@ -4,11 +4,11 @@ const app = express();
 const catNames = ['Luna', 'Bella', 'Lily', 'Lucy', 'Nala', 'Kitty', 'Chloe', 'Stella', 'Zoe', 'Lola'];
 
 app.get('/', (req,res) => {
-	res.send('Endpoints - /cat');
+	res.send('Endpoint - /cat');
 });
 
 app.get('/cat', (req,res) => {
-	res.send({ 'name': catNames[Math.floor(Math.random() * catNames.length)]});
+	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)]});
 });
 
 const appPort = process.env.PORT || 5050;
