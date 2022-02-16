@@ -8,7 +8,13 @@ app.get('/', (req,res) => {
 });
 
 app.get('/cat', (req,res) => {
-	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)]});
+	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)], 'version': 'green'});
+});
+
+app.get('/cats', (req, res) => {
+	console.log('cats endpoint invoked...');
+	res.set('Cache-Control', 'public, max-age=300');
+	res.send(catNames);
 });
 
 const appPort = process.env.PORT || 5050;
