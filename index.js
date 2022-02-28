@@ -12,8 +12,9 @@ app.get('/cat', (req,res) => {
 });
 
 app.get('/cats', (req, res) => {
-	console.log('cats endpoint invoked...');
+	console.log('cats endpoint invoked .....');
 	res.set('Cache-Control', 'public, max-age=300');
+	res.set('Content-Type', 'application/json');
 	res.send(catNames);
 });
 
