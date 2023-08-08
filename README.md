@@ -65,3 +65,9 @@ docker tag cat-service-green us-central1-docker.pkg.dev/core-demos/blue-green/ca
 docker push us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:green
 ```
 
+Now, lets run this new change(image with green tag) of our cat-service on Cloud Run and instruct Cloud Run not to migrate the traffic to this new revision/version using the “no-traffic” flag
+
+```
+gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:green --no-traffic --tag=green --region=us-central1 --allow-unauthenticated
+```
+
