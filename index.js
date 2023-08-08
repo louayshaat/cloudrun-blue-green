@@ -8,7 +8,7 @@ app.get('/', (req,res) => {
 });
 
 app.get('/cat', (req,res) => {
-	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)], 'version': 'green'});
+	res.send({ 'cat_name': catNames[Math.floor(Math.random() * catNames.length)], 'version': 'blue'});
 });
 
 app.get('/cats', (req, res) => {
