@@ -11,9 +11,12 @@ Our simple microservice contains a cat endpoint, which returns a random cat name
 
 ### Artifact Registry
 
-Create a repository in the Artifact Registry, give it a name and select a region.
+Create a repository in the Artifact Registry.
 
-![artifact](artifact.png)
+```
+gcloud artifacts repositories create blue-green --location=us-central1 --repository-format=docker --description="Docker repository"
+```
+
 Once the repository is created, run the setup instructions on your machine. The setup instructions are available in the console, this command will change based on the region that you select during the repository creation.
 
 ```
