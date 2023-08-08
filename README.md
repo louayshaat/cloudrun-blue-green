@@ -22,7 +22,7 @@ gcloud auth configure-docker us-central1-docker.pkg.dev
 
 ### Build and push the Docker image to Artifact Registry
 
-Below commands are used to build and push the docker image to the repository that we created in Artifact Registry
+Below commands are used to build and push the container image to the repository that we created in Artifact Registry
 
 ```
 docker build -t cat-service-blue .
