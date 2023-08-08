@@ -73,3 +73,6 @@ gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/blue
 
 CloudRun will generate a separate url for the new revision. That URL can be used for testing the new service with zero live traffic
 ![run](green.png)
+
+We can get this URL from the console as well and you can see in the console that this new revision is not serving any traffic ( Traffic 0%)
+![revision](revision.png)
