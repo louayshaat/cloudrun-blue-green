@@ -46,5 +46,5 @@ We can view our cat-service in the console,
 Access the url of the cat-service and test the /cat endpoint
 
 
-[https://cat-service-u7xvbpiada-uc.a.run.app/cat](https://blue---cat-service-6pi2y3i3iq-uc.a.run.app) endpoint is working fine, and is using the image with blue tag
+[https://cat-service-u7xvbpiada-uc.a.run.app/cat](https://blue---cat-service-6pi2y3i3iq-uc.a.run.app/cat) endpoint is working fine, and is using the image with blue tag
 
