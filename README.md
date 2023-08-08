@@ -17,7 +17,7 @@ Create a repository in the Artifact Registry, give it a name and select a region
 Once the repository is created, run the setup instructions on your machine. The setup instructions are available in the console, this command will change based on the region that you select during the repository creation.
 
 ```
-gcloud auth configure-docker \ us-central1-docker.pkg.dev
+gcloud auth configure-docker us-central1-docker.pkg.dev
 ```
 
 ### Build and push the Docker image to Artifact Registry
