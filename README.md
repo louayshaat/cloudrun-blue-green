@@ -82,4 +82,5 @@ We can validate this revision and If we are happy with our new revision, we can 
 gcloud run services update-traffic cat-service --to-tags green=50 --region=us-central1
 ```
 
-
+Now, when we access our cat-service URL we get 50% blue responses and 50% green
+![50](50.png)
