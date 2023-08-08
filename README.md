@@ -48,3 +48,20 @@ Access the url of the cat-service and test the /cat endpoint
 
 [https://cat-service-u7xvbpiada-uc.a.run.app/cat](https://blue---cat-service-6pi2y3i3iq-uc.a.run.app/cat) endpoint is working fine, and is using the image with blue tag
 
+
+## Gradual rollout and traffic migration
+Now, lets update the service(the response) and run it on Cloud Run
+
+```
+vim index.js
+```
+Replace blue with green in the code
+
+Lets push this new change to to Artifact Registry
+
+```
+docker build -t cat-service-green .
+docker tag cat-service-green us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:green
+docker push us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:green
+```
+
