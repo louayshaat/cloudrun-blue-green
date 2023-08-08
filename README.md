@@ -84,3 +84,17 @@ gcloud run services update-traffic cat-service --to-tags green=50 --region=us-ce
 
 Now, when we access our cat-service URL we get 50% blue responses and 50% green
 ![50](50.png)
+
+
+We can keep increasing the traffic flowing to our new revision and once we are happy with it, we can set to 100%
+```
+gcloud run services update-traffic cat-service --to-tags green=100 --region=us-central1
+```
+
+## Rollback
+
+We can rollback at anytime If we find an issue with our new revision, we can rollback to the previous revision(one with blue tag) using this command
+
+```
+gcloud run services update-traffic cat-service --to-revisions cat-service-00001-cam=100 --region=us-central1
+```
