@@ -76,3 +76,10 @@ CloudRun will generate a separate url for the new revision. That URL can be used
 
 We can get this URL from the console as well and you can see in the console that this new revision is not serving any traffic ( Traffic 0%)
 ![revision](revision.png)
+
+We can validate this revision and If we are happy with our new revision, we can gradually migrate traffic to our new revision using this command (here I have given 50, which means 50% of the traffic will hit the new revision(green) and 50% will hit the blue).
+```
+gcloud run services update-traffic cat-service --to-tags green=50
+```
+
+
