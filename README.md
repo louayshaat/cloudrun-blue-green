@@ -41,7 +41,7 @@ Run the below gcloud command to run our cat-service on Cloud Run using the image
 gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/cats-app-repo/cat-service:blue --tag=blue --region=us-central1
 ```
 We can view our cat-service in the console,
-![run](run.png)
+![run](cloudrun.png)
 
 Access the url of the cat-service and test the /cat endpoint
 
