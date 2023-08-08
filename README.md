@@ -71,3 +71,5 @@ Now, lets run this new change(image with green tag) of our cat-service on Cloud 
 gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:green --no-traffic --tag=green --region=us-central1 --allow-unauthenticated
 ```
 
+CloudRun will generate a separate url for the new revision. That URL can be used for testing the new service with zero live traffic
+![run](green.png)
