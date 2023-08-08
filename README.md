@@ -79,7 +79,7 @@ We can get this URL from the console as well and you can see in the console that
 
 We can validate this revision and If we are happy with our new revision, we can gradually migrate traffic to our new revision using this command (here I have given 50, which means 50% of the traffic will hit the new revision(green) and 50% will hit the blue).
 ```
-gcloud run services update-traffic cat-service --to-tags green=50
+gcloud run services update-traffic cat-service --to-tags green=50 --region=us-central1
 ```
 
 
