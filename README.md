@@ -38,7 +38,7 @@ Once the image is pushed, we can view it in the Artifact Registry
 Run the below gcloud command to run our cat-service on Cloud Run using the image that we pushed to Artifact Registry,
 
 ```
-gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:blue --tag=blue --region=us-central1
+gcloud run deploy cat-service --image=us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:blue --tag=blue --region=us-central1 --allow-unauthenticated
 ```
 We can view our cat-service in the console,
 ![run](cloudrun.png)
