@@ -33,9 +33,6 @@ docker tag cat-service-blue us-central1-docker.pkg.dev/core-demos/blue-green/cat
 docker push us-central1-docker.pkg.dev/core-demos/blue-green/cat-service:blue
 ```
 
-Once the image is pushed, we can view it in the Artifact Registry
-![repo](repo.png)
-
 ### Cloud Run
 
 Run the below gcloud command to run our cat-service on Cloud Run using the image that we pushed to Artifact Registry,
