@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi
+FROM --platform=linux/amd64 registry.access.redhat.com/ubi8/ubi
 RUN dnf install -y gcc-c++ make curl
 RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash -
 RUN dnf install -y nodejs
