@@ -96,5 +96,5 @@ gcloud run services update-traffic cat-service --to-tags green=100 --region=us-c
 We can rollback at anytime If we find an issue with our new revision, we can rollback to the previous revision(one with blue tag) using this command
 
 ```
-gcloud run services update-traffic cat-service --to-revisions cat-service-00001-cam=100 --region=us-central1
+gcloud run services update-traffic cat-service --to-revisions cat-service-00001-wim=100 --region=us-central1
 ```
